@@ -7,7 +7,8 @@ Pod::Spec.new do |root|
     root.license = 'Apache 2.0'
     root.source = { :git => 'https://github.com/JivoChat/JivoSDK-iOS.git', :tag => "v#{root.version}" }
     root.info_plist = {"CFBundleShortVersionString" => "#{root.version.version.partition('-').first}", "JVPackageVersion" => "#{root.version}"}
-    root.swift_versions = ['5.5', '5.6', '5.7', '5.8', '5.9']
+    #root.swift_versions = ['5.5', '5.6', '5.7', '5.8', '5.9']
+    s.swift_version = '5.0'
     root.ios.deployment_target = '11.0'
     root.default_subspec = 'SDK'
 
